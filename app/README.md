@@ -1,4 +1,4 @@
-# portpolio-website
+# portfolio-website
 
 ## Build Setup
 
