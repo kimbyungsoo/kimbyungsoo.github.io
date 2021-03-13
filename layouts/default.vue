@@ -25,7 +25,7 @@
              v-model="group"
              active-class="indigo--text text--accent-4"
            >
-            <nuxt-link v-scroll-to="'#profile'" to>
+            <nuxt-link v-scroll-to to="/">
              <v-list-item>
                <v-list-item-icon>
                  <v-icon>mdi-account</v-icon>
@@ -35,7 +35,7 @@
                </v-list-item-title>
              </v-list-item>
             </nuxt-link>
-            <nuxt-link v-scroll-to="'#history'" to>
+            <nuxt-link v-scroll-to to="/history">
              <v-list-item>
                <v-list-item-icon>
                  <v-icon>mdi-history</v-icon>
@@ -45,7 +45,17 @@
                </v-list-item-title>
              </v-list-item>
             </nuxt-link>
-            <nuxt-link v-scroll-to="'#work'" to>
+            <nuxt-link to="/skills">
+             <v-list-item>
+               <v-list-item-icon>
+                 <v-icon>mdi-hammer</v-icon>
+               </v-list-item-icon>
+               <v-list-item-title>
+                   skills
+               </v-list-item-title>
+             </v-list-item>
+            </nuxt-link>
+            <nuxt-link v-scroll-to to="/work">
              <v-list-item>
                <v-list-item-icon>
                  <v-icon>mdi-folder</v-icon>
@@ -55,23 +65,13 @@
                </v-list-item-title>
              </v-list-item>
             </nuxt-link>
-            <nuxt-link v-scroll-to="'#contact'" to>
+            <nuxt-link v-scroll-to to="/contact">
              <v-list-item>
                <v-list-item-icon>
                  <v-icon>mdi-email</v-icon>
                </v-list-item-icon>
                <v-list-item-title>
                    contact
-               </v-list-item-title>
-             </v-list-item>
-             </nuxt-link>
-            <nuxt-link to="/skills">
-             <v-list-item>
-               <v-list-item-icon>
-                 <v-icon>mdi-hammer</v-icon>
-               </v-list-item-icon>
-               <v-list-item-title>
-                   skills
                </v-list-item-title>
              </v-list-item>
              </nuxt-link>
