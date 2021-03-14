@@ -1,7 +1,22 @@
 <template>
-  <v-jumbotron :gradient="gradient" dark class="elevation-5" height="none">
+  <!-- <v-jumbotron :gradient="gradient" dark class="elevation-5" height="none"> -->
+  <v-img
+    src="https://img5.goodfon.com/original/2880x1800/f/b6/gradient-abstraktsiia-sinii-linii-background.jpg"
+    gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+  >
     <v-container fluid fill-height grid-list-xl>
       <v-layout row wrap align-center>
+        <v-flex xs12 md4 text-xs-center my-4>
+          <transition>
+            <v-avatar
+              class="grey lighten-4"
+              v-if="isAvatarVisible"
+              :size="avatarSize"
+            >
+              <img src="~assets/img/profile.jpeg" />
+            </v-avatar>
+          </transition>
+        </v-flex>
         <v-flex xs12 md8 text-xs-center my-4>
           <v-card id="jumbo-card" flat>
             <h1 class="display-2 mb-3">Web Application Software Engineer</h1>
@@ -14,21 +29,10 @@
             </h2>
           </v-card>
         </v-flex>
-
-        <v-flex xs12 md4 text-xs-center my-4>
-          <transition>
-            <v-avatar
-              class="grey lighten-4"
-              v-if="isAvatarVisible"
-              :size="avatarSize"
-            >
-              <img :src="imageProfile" />
-            </v-avatar>
-          </transition>
-        </v-flex>
       </v-layout>
     </v-container>
-  </v-jumbotron>
+  <!-- </v-jumbotron> -->
+  </v-img>
 </template>
 
 <script>
@@ -38,19 +42,8 @@ export default {
     data () {
     return {
       avatarSize: 250,
-      gradient: 'to right, #004, #1CB5E0',
-      isAvatarVisible: false
-    }
-  },
-  props: {
-    folderImage: {
-      type: String,
-      default: '~assets/img/'
-    }
-  },
-  computed: {
-    imageProfile () {
-      return this.folderImage + 'profile.jpeg';
+      gradient: 'to right, #000004, #1CB5E0',
+      isAvatarVisible: true
     }
   },
   methods: {
