@@ -6,7 +6,7 @@
   >
     <v-container fluid fill-height grid-list-xl>
       <v-layout row wrap align-center>
-        <v-flex xs12 md4 text-xs-center my-4>
+        <v-flex xs12 md4 text-center my-4>
           <transition>
             <v-avatar
               class="grey lighten-4"
@@ -17,16 +17,15 @@
             </v-avatar>
           </transition>
         </v-flex>
-        <v-flex xs12 md8 text-xs-center my-4>
+        <v-flex xs12 md8 text-center my-4>
           <v-card id="jumbo-card" flat>
-            <h1 class="display-2 mb-3">Web Application Software Engineer</h1>
-            <h2>
-              2 years software development experience
-              <em style="display: block; font-size: 1rem"
-                >- Vue.js, Laravel, Vuetify, Bootstrap, PHP, Python, HTML, CSS,
-                MySQL, SQLite, Firebase, GraphQL etc.</em
-              >
-            </h2>
+            <h2 class="display-2 mb-3">Kim Byung Soo</h2>
+            <h3 class="display-1 mb-3">Web Application Software Engineer</h3>
+            <h3>
+              2 years web development experience
+              <br />
+              <strong> - Vue.js, Vuetify, Bootstrap, PHP, Python, Django, Spring, MySQL, SQLite, etc.</strong>
+            </h3>
           </v-card>
         </v-flex>
       </v-layout>
@@ -37,22 +36,19 @@
 
 <script>
 export default {
-  components: {
-  },
-    data () {
+  components: {},
+  data() {
     return {
       avatarSize: 250,
-      gradient: 'to right, #000004, #1CB5E0',
-      isAvatarVisible: true
-    }
+      gradient: "to right, #000004, #1CB5E0",
+      isAvatarVisible: true,
+    };
   },
-  methods: {
-
-  },
-  mounted () {
+  methods: {},
+  mounted() {
     // To trigger animation
     this.isAvatarVisible = true;
-  }
+  },
 };
 </script>
 

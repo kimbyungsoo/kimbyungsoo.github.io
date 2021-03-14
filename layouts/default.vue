@@ -7,7 +7,7 @@
       >
         <v-app-bar-nav-icon　color="white" @click="drawer = true"></v-app-bar-nav-icon>
         <v-toolbar-title>
-          KIM-BYUNG-SOO's Portfolio
+          KIM BYUNG SOO's Portfolio
         </v-toolbar-title>
         <v-spacer />
       </v-app-bar>

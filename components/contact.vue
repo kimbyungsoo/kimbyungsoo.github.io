@@ -30,8 +30,8 @@ export default {
 #component-profile{
     height: 100vh;
     img {
-        max-height: 100px;
-        border-radius: 100px;
+        max-height: 200px;
+        border-radius: 200px;
     }
     i {
         font-size: 44px;
