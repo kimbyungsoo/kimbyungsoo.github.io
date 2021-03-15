@@ -1,8 +1,13 @@
 <template>
   <!-- <v-jumbotron :gradient="gradient" dark class="elevation-5" height="none"> -->
-  <v-img
+  <!-- <v-img
     src="https://img5.goodfon.com/original/2880x1800/f/b6/gradient-abstraktsiia-sinii-linii-background.jpg"
     gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+  >   -->
+  <v-img
+    :src="require(`~/assets/background/profile_background.jpg`)"
+    gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+    height="none"
   >
     <v-container fluid fill-height grid-list-xl>
       <v-layout row wrap align-center>
