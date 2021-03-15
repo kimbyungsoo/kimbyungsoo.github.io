@@ -5,25 +5,23 @@
       height="none"
     >
       <v-card id="jumbo-card" width="100vw" class="pa-4">
-        <v-card-title class="justify-center display-1 font-italic">
+        <v-card-title class="justify-center display-1 font-italic mb-auto">
           Skills
         </v-card-title>
-      </v-card>
-      <v-container fluid>
+        <v-container fluid>
           <v-layout wrap row>
             <v-flex xs12 sm6 md4 class="pa-2 ma-auto">
               <skill
-                title="Skill 페이지 작성중"
-                number="Test"
-                tIcon="Django"
-                tIconColor="success"
-                bIcon="update"
-                bIconColor="primary"
-                bText="3시간 전"
+                title="Django, ML, Data Crawiling"
+                name="Python"
+                summary="Django"
+                experimentYear=3
+                projectCount=4
               ></skill>
             </v-flex>
           </v-layout>
       </v-container>
+      </v-card>
     </v-img>
   </div>
 </template>
@@ -38,4 +36,9 @@ export default {
 </script>
 
 <style scoped>
+/* Remove background of card in v-jumbotron */
+#jumbo-card {
+  background-color: rgba(0, 0, 0, 0);
+  height: none;
+}
 </style>
