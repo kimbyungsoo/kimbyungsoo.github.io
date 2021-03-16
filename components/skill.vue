@@ -1,12 +1,12 @@
 <template>
   <v-card class="skill-card">
-    <v-container pa-1>
-      <v-layout row>
+    <v-container pa-1 >
+      <v-layout wrap row>
         <v-flex xs12>
           <v-card-title primary-title>
             <div>
+              <h3 class="headline font-weight-bold">{{ name }}</h3>
               <div class="grey--text">{{ title }}</div>
-              <h3 class="headline">{{ name }}</h3>
               <p class="caption font-weight-thin mb-0">
                   <span class="experiment-year">{{ experimentYear }} years</span>
                   <span class="project-count">{{ projectCount }} projects</span>
@@ -18,7 +18,7 @@
       <v-divider light></v-divider>
       <v-card-actions class="pa-2">
         <span class="caption experiment-year-bar" v-for="i in parseInt(experimentYear)" :key="i">&nbsp; &nbsp; </span>
-        <span class="caption project-count-bar" v-for="i in parseInt(projectCount)" :key="i">&nbsp; &nbsp; </span>
+        <span class="caption project-count-bar" v-for="j in parseInt(projectCount)" :key="j">&nbsp; &nbsp; </span>
         <v-spacer></v-spacer>
       </v-card-actions>
     </v-container>
