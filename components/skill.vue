@@ -1,6 +1,6 @@
 <template>
   <v-card class="skill-card">
-    <v-container pa-1 >
+    <v-container pa-1>
       <v-layout wrap row>
         <v-flex xs12>
           <v-card-title primary-title>
@@ -8,8 +8,8 @@
               <h3 class="headline font-weight-bold">{{ name }}</h3>
               <div class="grey--text">{{ title }}</div>
               <p class="caption font-weight-thin mb-0">
-                  <span class="experiment-year">{{ experimentYear }} years</span>
-                  <span class="project-count">{{ projectCount }} projects</span>
+                <span class="experiment-year">{{ experimentYear }} years</span>
+                <span class="project-count">{{ projectCount }} projects</span>
               </p>
             </div>
           </v-card-title>
@@ -17,8 +17,18 @@
       </v-layout>
       <v-divider light></v-divider>
       <v-card-actions class="pa-2">
-        <span class="caption experiment-year-bar" v-for="i in parseInt(experimentYear)" :key="i">&nbsp; &nbsp; </span>
-        <span class="caption project-count-bar" v-for="j in parseInt(projectCount)" :key="j">&nbsp; &nbsp; </span>
+        <span
+          class="caption experiment-year-bar"
+          v-for="i in parseInt(experimentYear)"
+          :key="`experiment-${i}`"
+          >&nbsp; &nbsp;
+        </span>
+        <span
+          class="caption project-count-bar"
+          v-for="j in parseInt(projectCount)"
+          :key="`project-${j}`"
+          >&nbsp; &nbsp;
+        </span>
         <v-spacer></v-spacer>
       </v-card-actions>
     </v-container>
@@ -31,13 +41,13 @@ export default {
     name: String,
     summary: String,
     experimentYear: Number,
-    projectCount: Number,
-  },
+    projectCount: Number
+  }
 };
 </script>
 
 <style scoped>
-.skill-card{
+.skill-card {
 }
 span {
   border-radius: 5px;
@@ -55,4 +65,4 @@ span {
 .project-count-bar {
   background-image: linear-gradient(to bottom, #c9fbe6, #187024);
 }
-</style> 
+</style>
