@@ -9,11 +9,9 @@
           <v-col
             v-for="(item, index) in skills"
             :key="index"
-            xl="3"
             lg="4"
-            md="6"
-            sm="12"
-            cols="12"
+            md="3"
+            sm="6"
           >
             <skill
               :title="item.title"
@@ -79,7 +77,7 @@ export default {
       rgba(0, 0, 0, 0.33),
       rgba(20, 20, 20, 0.7)
     ),
-    url("~/assets/background/jerry.gif");
+    url("~/assets/background/dancing.gif");
   background-position: center center, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;

@@ -44,13 +44,13 @@
               </v-list-item-title>
             </v-list-item>
           </nuxt-link>
-          <nuxt-link to="/works">
+          <nuxt-link to="/projects">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-folder</v-icon>
               </v-list-item-icon>
               <v-list-item-title>
-                work
+                projects
               </v-list-item-title>
             </v-list-item>
           </nuxt-link>
