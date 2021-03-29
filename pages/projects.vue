@@ -2,16 +2,19 @@
   <v-container fluid class="background" fill-height>
     <v-card id="jumbo-card" width="100vw" class="pa-4">
       <v-card-title class="justify-center display-1 font-italic mb-auto">
-        Skills
+        Projects
       </v-card-title>
       <v-container fluid>
-        <v-row>
+        <h1 style="text-align:center;">작업중</h1>
+        <!-- <v-row>
           <v-col
             v-for="(item, index) in skills"
             :key="index"
+            xl="3"
             lg="4"
-            md="3"
-            sm="6"
+            md="6"
+            sm="12"
+            cols="12"
           >
             <skill
               :title="item.title"
@@ -21,7 +24,7 @@
               :projectCount="item.projectCount"
             ></skill
           ></v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
     </v-card>
   </v-container>

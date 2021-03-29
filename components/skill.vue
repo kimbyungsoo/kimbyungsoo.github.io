@@ -1,15 +1,15 @@
 <template>
-  <v-card class="skill-card">
+  <v-card class="skill-card neumorphism">
     <v-container pa-1>
       <v-layout wrap row>
         <v-flex xs12>
           <v-card-title primary-title>
             <div>
-              <h3 class="headline font-weight-bold">{{ name }}</h3>
-              <div class="grey--text">{{ title }}</div>
+              <h3 class="headline font-weight-bold" style="text-shadow: rgb(0 0 0 / 75%) 1px 2px 0px;">{{ name }}</h3>
+              <div class="font-weight-bold" style=" color:#b0b0b0; text-shadow: rgb(35 35 35) 0px 2px 4px;">{{ title }}</div>
               <p class="caption font-weight-thin mb-0">
-                <span class="experiment-year">{{ experimentYear }} years</span>
-                <span class="project-count">{{ projectCount }} projects</span>
+                <span class="font-weight-bold experiment-year">{{ experimentYear }} yearss</span>
+                <span class="font-weight-bold project-count">{{ projectCount }} projects</span>
               </p>
             </div>
           </v-card-title>
@@ -55,14 +55,24 @@ span {
 }
 .experiment-year {
   color: #ffa600;
+  text-shadow: 0px 1px 0px #3c2700;
 }
 .project-count {
   color: #a9f5b3;
+  text-shadow: 0px 1px 0px #004408;
 }
 .experiment-year-bar {
   background-image: linear-gradient(to bottom, #fbcac9, #ffa600);
 }
 .project-count-bar {
   background-image: linear-gradient(to bottom, #c9fbe6, #187024);
+}
+.neumorphism {
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.20 ); */
 }
 </style>

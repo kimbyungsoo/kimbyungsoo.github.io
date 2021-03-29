@@ -54,7 +54,7 @@ export default {
       rgba(100, 115, 201, 0.33),
       rgba(25, 32, 72, 0.7)
     ),
-    url("~/assets/background/profile_background.jpg");
+    url("~/assets/background/space.gif");
   background-position: center center, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
