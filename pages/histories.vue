@@ -62,8 +62,8 @@ export default {
       {
         color: "orange",
         year: "2021~",
-        title: "Looking for a job.",
-        content: "contact to me."
+        title: "Lambda256 corporation",
+        content: "BaaS Web Engineering."
       }
     ]
   })
